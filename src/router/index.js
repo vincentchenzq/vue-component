@@ -7,11 +7,22 @@ const routes = [
   {
     path: '/CollapseTable',
     name: 'CollapseTable',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/CollapseTable.vue'),
+      import(
+        /* webpackChunkName: "CollapseTable" */ '../views/CollapseTable.vue'
+      ),
+  },
+  {
+    path: '/VTableTree',
+    name: 'VTableTree',
+    component: () =>
+      import(/* webpackChunkName: "VTableTree" */ '../views/VTableTree.vue'),
+  },
+  {
+    path: '/VTree',
+    name: 'VTree',
+    component: () =>
+      import(/* webpackChunkName: "VTree" */ '../views/VTree.vue'),
   },
 ];
 
