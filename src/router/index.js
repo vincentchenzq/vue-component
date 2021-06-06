@@ -13,10 +13,12 @@ const routes = [
       ),
   },
   {
-    path: '/VTableTree',
-    name: 'VTableTree',
+    path: '/VCascader',
+    name: 'VCascader',
     component: () =>
-      import(/* webpackChunkName: "VTableTree" */ '../views/VTableTree.vue'),
+      import(
+        /* webpackChunkName: "VCascaderDemo" */ '../views/VCascaderDemo.vue'
+      ),
   },
   {
     path: '/VTree',
